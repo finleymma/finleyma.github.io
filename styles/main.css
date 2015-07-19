@@ -1,0 +1,968 @@
+/*@import url(../bower_components/normalize.css/normalize.css);*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/DEV\/mini_poj\/app\/styles\/main\.scss}line{font-family:\000032}}
+html body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "华文细黑", "微软雅黑";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/DEV\/mini_poj\/app\/styles\/main\.scss}line{font-family:\000036}}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/DEV\/mini_poj\/app\/styles\/main\.scss}line{font-family:\0000315}}
+.pages {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: #222222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/DEV\/mini_poj\/app\/styles\/main\.scss}line{font-family:\0000325}}
+.page {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform ease 300ms;
+}
+
+.loading-warper {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+/* line 7, ../../../app/models/loading/loading.scss */
+.loading-center {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-orient: Vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+/* line 17, ../../../app/models/loading/loading.scss */
+.loading-logo {
+  width: 100%;
+  max-width: 429px;
+  height: 60%;
+  max-height: 652px;
+  background: url("../images/loading/penguin.png") no-repeat center center scroll;
+  -webkit-background-size: contain;
+  background-size: contain;
+  margin-top: -20%;
+}
+
+/* line 28, ../../../app/models/loading/loading.scss */
+.loading-logo-name {
+  width: 55%;
+  max-width: 429px;
+  height: 24%;
+  max-height: 84px;
+  background: url("../images/loading/sng1.png") no-repeat center center scroll;
+  background-size: contain;
+  top:20px;
+}
+
+@charset "UTF-8";
+/* line 3, ../../../app/models/qq_talk/qq_talk.scss */
+input[type=button], input[type=text], input[type=password] {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+/* line 11, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-fl {
+  float: left;
+}
+
+/* line 14, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-fr {
+  float: right;
+}
+
+/* line 17, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-wraper {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  max-height: 919px;
+  background: #FFFFFF;
+  background: url("../images/qq_talk/bg_copy.png") no-repeat scroll top left;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+
+/* line 28, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-header {
+  width: 100%;
+  height: 47px;
+  position: fixed;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+
+
+
+/* line 34, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-header img {
+  z-index: 10;
+}
+
+.qq_talk-content {
+  position: relative;
+  width: 100%;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  padding-top: 47px;
+  padding-bottom: 45px;
+}
+.qq_talk-main {
+  height: 100%;
+  width: 100%;
+}
+
+.qq_talk-main .J_qqTalk {
+  display: none;
+}
+
+.qq_talk-main .large-em {
+  vertical-align: middle;
+}
+
+.qq_talk-main ul {
+  padding: 20px 0 0 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.qq_talk-main li {
+  display: block; !important;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 10px 0;
+}
+/* line 64, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-main li h5 {
+  margin: 0 0.67em;
+  font-size: 0.8rem;
+}
+/* line 68, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-main li .qq_talk-link-img {
+  width: 35%;
+  max-width: 60px;
+  height: 35%;
+  max-height: 60px;
+}
+/* line 74, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-main li .desc {
+  margin-left: 0.67em;
+  max-width: 8em;
+  font-size: 0.6rem;
+  color: #777777;
+  display: inline-block;
+}
+
+/* line 83, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-user-icon {
+  width: 40px;
+  height: 40px;
+  max-height: 53px;
+  max-width: 53px;
+}
+/* line 88, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-user-icon img {
+  max-width: 53px;
+  max-height: 53px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 98, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-text {
+  max-width: 50%;
+  padding: 3% 3%;
+  font-size: 14px;
+  font-family: Arial;
+  width: auto;
+  height: auto;
+  line-height: 1.15;
+  font-weight: normal;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+/* line 110, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-text div {
+  width: 60%;
+}
+
+.qq_talk-link .qq_talk-fl h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.qq_talk-link .qq_talk-fl span {
+  font-size: 14px;
+}
+
+/* line 114, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-tail {
+  width: 16px;
+  height: 28px;
+}
+
+/* line 118, ../../../app/models/qq_talk/qq_talk.scss */
+.tail1 {
+  background: url("../images/qq_talk/box_dialog_tail1.png") no-repeat scroll top left;
+  margin-left: -8px;
+  margin-right: 8px;
+  margin-top: -4px;
+}
+
+/* line 124, ../../../app/models/qq_talk/qq_talk.scss */
+.tail2 {
+  background: url("../images/qq_talk/box_dialog_tail2.png") no-repeat scroll top left;
+  margin-right: -8px;
+  margin-left: 8px;
+  margin-top: -5px;
+}
+
+/* line 130, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-dg-1 {
+  background: #18B4ED;
+  color: #ffffff;
+}
+
+/* line 136, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-dg-5 {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.qq_talk-dg-5 img {
+  vertical-align: middle;
+}
+
+/* line 143, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: 640px;
+  height: 45px;
+  max-height: 88px;
+  line-height: 44px;
+  background: url("../images/qq_talk/box_input_bg2.png") no-repeat scroll top left;
+  background-size: cover;
+}
+/* line 154, ../../../app/models/qq_talk/qq_talk.scss */
+.qq_talk-footer input {
+  margin-top: 1.5%;
+  width: 76%;
+  height: 60%;
+  border: 1px solid #c8c9ca;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 5px;
+  float: left;
+}
+
+.qq_talk-footer .qq_talk-input {
+  width: 76%;
+  height: 60%;
+  background-color: #fff;
+  border: 1px solid #c8c9ca;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 5px;
+  float: left;
+  overflow: hidden;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.qq_talk-footer .icon-face {
+  margin-top: 10px;
+  width: 8%;
+  height: 65%;
+  background: url("../images/qq_talk/button_exp.png") no-repeat scroll center;
+  background-size: contain;
+  border: none;
+  float: left;
+  margin-left: 6px;
+}
+.qq_talk-footer .icon-add {
+  margin-top: 10px;
+  width: 8%;
+  height: 65%;
+  background: url("../images/qq_talk/button_ins.png") no-repeat scroll center;
+  background-size: contain;
+  border: none;
+  float: left;
+  margin-left: 6px;
+}
+
+.qq_talk-input-keybord {
+  width: 100%;
+  padding: 35% 0;
+  background: url("../images/qq_talk/keybord.png") no-repeat top left scroll;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.user-bringbring {
+  -webkit-backface-visibility: visible;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: bringbring 0.9s infinite ease-in-out normal none;
+  -o-animation: bringbring 0.9s infinite ease-in-out normal none;
+  animation: bringbring 0.9s infinite ease-in-out normal none;
+}
+
+@-webkit-keyframes bringbring {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.qq_talk-show {
+  -webkit-backface-visibility: visible;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showdow {
+  visibility: hidden;
+  position: absolute;
+  width: 25%;
+  max-width: 100px;
+  height: 9%;
+  max-height: 60px;
+  bottom: 1px;
+  right: 2px;
+  background: url("../images/qq_talk/circle.png") no-repeat center center scroll;
+  background-size: contain;
+  z-index: 200;
+}
+
+
+.box-shadow {
+  box-shadow: 0 0 15px #000;
+}
+/*------------------------------------------------------------------------------------------------------------- */
+/* line 1, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  background: #154CB0;
+}
+/* line 10, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-title .test-title-up {
+  margin: 0 auto;
+  padding: 0;
+  background: url(../images/sng_test/familiar.png) no-repeat;
+}
+/* line 16, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-title .test-title-down {
+  margin: 0 auto;
+  background: url(../images/sng_test/product-icon.png) no-repeat;
+}
+/* line 22, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .separator {
+  margin: 0 auto;
+  background: url(../images/sng_test/bar.png) no-repeat;
+}
+/* line 27, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-sub-title {
+  margin: 0 auto;
+  background: url(../images/sng_test/sub-title.png) no-repeat;
+}
+/* line 32, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands {
+  position: relative;
+  margin: 0 auto;
+  background: url(../images/sng_test/brands.png) no-repeat;
+}
+/* line 37, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands .brand-item {
+  position: absolute;
+}
+/* line 41, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands .active {
+  background: url(../images/sng_test/circle-selected.png) no-repeat;
+}
+/* line 45, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands .test-result {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  right: 0;
+  display: none;
+  margin: 0 auto;
+  background: url(../images/sng_test/result.png) no-repeat;
+  width: 90%;
+  max-width: 472px;
+  background-size: contain;
+}
+
+/* line 58, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-title {
+  padding-top: 30px;
+}
+/* line 61, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-title .test-title-up {
+  width: 35%;
+  height: 32px;
+  max-width: 200px;
+  max-height: 32px;
+  background-size: contain;
+}
+/* line 69, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-title .test-title-down {
+  width: 65%;
+  max-width: 482px;
+  background-size: contain;
+}
+/* line 76, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .separator {
+  margin-top: 15px;
+  width: 60%;
+  height: 1px;
+  max-width: 482px;
+  max-height: 1px;
+  background-size: contain;
+}
+/* line 85, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .test-sub-title {
+  margin-top: 10px;
+  width: 65%;
+  max-width: 482px;
+  background-size: contain;
+}
+/* line 92, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands {
+  margin-top: 30px;
+  width: 65%;
+  max-width: 482px;
+  background-size: contain;
+}
+/* line 98, ../../../app/models/sng_test/sng_test.scss */
+.sng_test-main .brands .brand-item {
+  background-size: contain;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/* line 1, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  background: #154CB0 url(../images/sng_test_result/bg.png) no-repeat center center;
+}
+/* line 9, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/calc.png) no-repeat;
+}
+/* line 14, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/suitable.png) no-repeat;
+}
+/* line 18, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value .percent {
+  position: relative;
+}
+/* line 23, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/sng.png) no-repeat;
+}
+/* line 28, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng-fullname {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/sng_fullname.png) no-repeat;
+}
+/* line 33, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .bar {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/bar.png) no-repeat;
+}
+/* line 38, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .detail {
+  margin: 0 auto;
+  background: url(../images/sng_test_result/detail.png) no-repeat;
+}
+/* line 43, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .recommend {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background: url(../images/sng_test_result/recommend.png) no-repeat;
+}
+
+/* line 50, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main {
+  padding-top: 15%;
+  background-size: cover;
+}
+/* line 55, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result {
+  width: 45%;
+  max-width: 254px;
+  background-size: contain;
+}
+/* line 61, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value {
+  margin-top: 15px;
+  width: 70%;
+  max-width: 483px;
+  background-size: contain;
+}
+/* line 68, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value .percent {
+  top: 2px;
+  width: 30%;
+  max-width: 153px;
+  left: 30%;
+}
+/* line 76, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng {
+  margin-top: 30px;
+  width: 75%;
+  max-width: 600px;
+  background-size: contain;
+}
+/* line 84, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng-fullname {
+  margin-top: 15px;
+  width: 75%;
+  max-width: 480px;
+  background-size: contain;
+}
+/* line 92, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .bar {
+  margin-top: 15px;
+  width: 75%;
+  height: 1px;
+  max-width: 480px;
+  background-size: contain;
+}
+/* line 101, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .detail {
+  margin-top: 15px;
+  width: 75%;
+  max-width: 507px;
+  background-size: contain;
+}
+/* line 109, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .recommend {
+  margin-top: 40px;
+  width: 75%;
+  max-width: 527px;
+  background-size: contain;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+@charset "UTF-8";
+/* line 2, ../../../app/models/q_zone/q_zone.scss */
+.q_zone {
+  /* 头衔和昵称 */
+  /* 消息内容 */
+  /* 照片 */
+  /* 按钮区域 */
+}
+/* line 3, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main {
+  height: 100%;
+  background: #ececec;
+  overflow: hidden;
+  position: relative;
+  font-family: "Heiti SC", "华文细黑", "微软雅黑";
+}
+/* line 9, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 200;
+}
+/* line 18, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .cover-img {
+  position: absolute;
+  z-index: 300;
+  background: no-repeat center center;
+  /*background-image: url(../images/q_zone/temp.jpg);*/
+  background-size: contain;
+}
+/* line 25, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .wrapper {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 33, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .zoom-in-list-wapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+}
+/* line 41, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .zoom-in-list {
+  position: absolute;
+  z-index: 400;
+}
+/* line 46, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-header {
+  position: absolute;
+  z-index: 100;
+  font-weight: 900;
+  color: #fff;
+  background: #23b4eb;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+/* line 55, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-header img {
+  width: 100%;
+}
+/* line 59, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view, .q_zone-table-view li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 67, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view li {
+  margin: 10px 0 10px;
+  padding: 15px 10px 17px;
+  background: #fff;
+  margin-top: 0;
+}
+/* line 73, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info {
+  height: 0;
+  margin: 0;
+  padding-top: 62.5%;
+  background: url(../images/q_zone/top-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 80, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info .top-left {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 72px;
+}
+/* line 86, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info .top-right {
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+  width: 140px;
+}
+/* line 93, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .button-bar {
+  height: 0;
+  padding: 0;
+  padding-top: 9.375%;
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 100, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .button-bar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* line 109, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .bottom {
+  height: 60px;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+}
+/* line 119, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+/* line 123, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .avatar {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 50%;
+}
+/* line 129, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .nickname {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 15px;
+  color: #2b5891;
+  font-weight: 600;
+}
+/* line 137, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .time {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  font-size: 10px;
+  color: #707070;
+}
+/* line 146, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-text {
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 152, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-photo {
+  width: 250px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+/* line 156, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-photo img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/* line 166, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group, .q_zone-cell-btn-group li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 172, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group {
+  overflow: auto;
+}
+/* line 174, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .btn {
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px #eaeaea solid;
+  background: url(../images/q_zone/sprite.png) no-repeat;
+}
+/* line 181, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .share {
+  float: left;
+  background-position: -0px -1px;
+}
+/* line 185, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .like {
+  float: right;
+  background-position: -64px -1px;
+  margin-right: 5px;
+}
+/* line 190, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .reply {
+  background-position: -127px -1px;
+  float: right;
+}
+/* line 195, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-view-time {
+  margin-top: 14px;
+  color: #396089;
+  font-size: 13px;
+}
+/* line 199, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-view-time i {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(../images/q_zone/sprite.png) no-repeat -281px -1px;
+}
+/* line 206, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-like-list {
+  margin-top: 14px;
+  color: #396089;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* line 211, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-like-list i {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(../images/q_zone/sprite.png) no-repeat -254px -4px;
+}
+/* line 218, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list, .q_zone-cell-reply-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 224, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* line 228, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list li .name {
+  color: #396089;
+}
+
+/*----------------------------------------------------------------------------------*/
+/* line 1, ../../../app/models/ending/ending.scss */
+.ending-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url("../images/ending/qq-logo-c-hor.png") no-repeat top left scroll;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+}
+
+/* line 9, ../../../app/models/ending/ending.scss */
+.ending-box {
+  width: 70%;
+  height: 100%;
+}
+/* line 12, ../../../app/models/ending/ending.scss */
+.ending-box img {
+  width: 100%;
+}
+
+/* line 16, ../../../app/models/ending/ending.scss */
+.ending-center {
+  margin: 0 auto;
+}
+
+/* line 19, ../../../app/models/ending/ending.scss */
+.ending-top {
+  width: 100%;
+  max-width: 330px;
+  max-height: 60px;
+  margin-top: 20%;
+}
+
+/* line 25, ../../../app/models/ending/ending.scss */
+.ending-gift {
+  margin-top: 20%;
+  max-width: 330px;
+  max-height: 60px;
+}
+
+/* line 30, ../../../app/models/ending/ending.scss */
+.ending-main {
+  width: 60%;
+  max-width: 198px;
+  max-height: 84px;
+  margin: 20%  auto;
+}
+
+/* line 36, ../../../app/models/ending/ending.scss */
+.ending-mail-info {
+  margin-top: 20%;
+  max-width: 330px;
+  max-height: 30px;
+}
+
+/* line 41, ../../../app/models/ending/ending.scss */
+.ending-logo-name {
+  background-size: contain;
+  width: 100%;
+  height: 15%;
+  max-width: 330px;
+  max-height: 110px;
+  background: url("../images/ending/ending-info.png") no-repeat center center scroll;
+}
+
+/* line 50, ../../../app/models/ending/ending.scss */
+.ending-shadow-share {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: url("../images/ending/MASK.png") no-repeat center center scroll;
+  background-size: 100% 100%;
+}
+
+.ending-sng {
+  margin-top: 15%;
+  text-align: center;
+}
+.ending-sng img{
+  width: 120px;
+}

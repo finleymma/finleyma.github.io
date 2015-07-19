@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* line 2, ../../../app/models/q_zone/q_zone.scss */
+.q_zone {
+  /* 头衔和昵称 */
+  /* 消息内容 */
+  /* 照片 */
+  /* 按钮区域 */
+}
+/* line 3, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main {
+  height: 100%;
+  background: #ececec;
+  overflow: hidden;
+  position: relative;
+  font-family: "Heiti SC", "华文细黑", "微软雅黑";
+}
+/* line 9, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 200;
+}
+/* line 18, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .cover-img {
+  position: absolute;
+  z-index: 300;
+  background: no-repeat center center;
+  background-image: url(../images/q_zone/temp.jpg);
+  background-size: contain;
+}
+/* line 25, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .wrapper {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 33, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .zoom-in-list-wapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+}
+/* line 41, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-main .zoom-in-list {
+  position: absolute;
+  z-index: 400;
+}
+/* line 46, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-header {
+  position: absolute;
+  z-index: 100;
+  font-weight: 900;
+  color: #fff;
+  background: #23b4eb;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+/* line 55, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-header img {
+  width: 100%;
+}
+/* line 59, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view, .q_zone-table-view li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 67, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view li {
+  margin: 10px 0 10px;
+  padding: 15px 10px 17px;
+  background: #fff;
+  margin-top: 0;
+}
+/* line 73, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info {
+  height: 0;
+  margin: 0;
+  padding-top: 62.5%;
+  background: url(images/q_zone/top-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 80, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info .top-left {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 72px;
+}
+/* line 86, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .user-info .top-right {
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+  width: 140px;
+}
+/* line 93, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .button-bar {
+  height: 0;
+  padding: 0;
+  padding-top: 9.375%;
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 100, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .button-bar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* line 109, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-table-view .bottom {
+  height: 60px;
+  text-align: center;
+  padding: 0;
+  background-color: transparent;
+}
+/* line 119, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header {
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+}
+/* line 123, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .avatar {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 50%;
+}
+/* line 129, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .nickname {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 15px;
+  color: #2b5891;
+  font-weight: 600;
+}
+/* line 137, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-header .time {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  font-size: 10px;
+  color: #707070;
+}
+/* line 146, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-text {
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 152, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-photo {
+  width: 250px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+/* line 156, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-photo img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/* line 166, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group, .q_zone-cell-btn-group li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 172, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group {
+  overflow: auto;
+}
+/* line 174, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .btn {
+  width: 60px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px #eaeaea solid;
+  background: url(images/q_zone/sprite.png) no-repeat;
+}
+/* line 181, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .share {
+  float: left;
+  background-position: -0px -1px;
+}
+/* line 185, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .like {
+  float: right;
+  background-position: -64px -1px;
+  margin-right: 5px;
+}
+/* line 190, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-btn-group .reply {
+  background-position: -127px -1px;
+  float: right;
+}
+/* line 195, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-view-time {
+  margin-top: 14px;
+  color: #396089;
+  font-size: 13px;
+}
+/* line 199, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-view-time i {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(images/q_zone/sprite.png) no-repeat -281px -1px;
+}
+/* line 206, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-like-list {
+  margin-top: 14px;
+  color: #396089;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* line 211, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-like-list i {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(images/q_zone/sprite.png) no-repeat -254px -4px;
+}
+/* line 218, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list, .q_zone-cell-reply-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 224, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* line 228, ../../../app/models/q_zone/q_zone.scss */
+.q_zone-cell-reply-list li .name {
+  color: #396089;
+}

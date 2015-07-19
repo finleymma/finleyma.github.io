@@ -1,0 +1,110 @@
+/* line 1, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  background: #154CB0 url(images/sng_test_result/bg.png) no-repeat center center;
+}
+/* line 9, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result {
+  margin: 0 auto;
+  background: url(images/sng_test_result/calc.png) no-repeat;
+}
+/* line 14, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value {
+  margin: 0 auto;
+  background: url(images/sng_test_result/suitable.png) no-repeat;
+}
+/* line 18, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value .percent {
+  position: relative;
+}
+/* line 23, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng {
+  margin: 0 auto;
+  background: url(images/sng_test_result/sng.png) no-repeat;
+}
+/* line 28, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng-fullname {
+  margin: 0 auto;
+  background: url(images/sng_test_result/sng_fullname.png) no-repeat;
+}
+/* line 33, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .bar {
+  margin: 0 auto;
+  background: url(images/sng_test_result/bar.png) no-repeat;
+}
+/* line 38, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .detail {
+  margin: 0 auto;
+  background: url(images/sng_test_result/detail.png) no-repeat;
+}
+/* line 43, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .recommend {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background: url(images/sng_test_result/recommend.png) no-repeat;
+}
+
+/* line 50, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main {
+  padding-top: 15px;
+  background-size: cover;
+}
+/* line 55, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result {
+  width: 45%;
+  max-width: 254px;
+  background-size: contain;
+}
+/* line 61, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value {
+  margin-top: 15px;
+  width: 70%;
+  max-width: 483px;
+  background-size: contain;
+}
+/* line 68, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .test-result-value .percent {
+  top: 2px;
+  width: 30%;
+  max-width: 153px;
+  left: 30%;
+}
+/* line 76, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng {
+  margin-top: 30px;
+  width: 75%;
+  max-width: 600px;
+  background-size: contain;
+}
+/* line 84, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .sng-fullname {
+  margin-top: 15px;
+  width: 75%;
+  max-width: 480px;
+  background-size: contain;
+}
+/* line 92, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .bar {
+  margin-top: 15px;
+  width: 75%;
+  height: 1px;
+  max-width: 480px;
+  background-size: contain;
+}
+/* line 101, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .detail {
+  margin-top: 15px;
+  width: 75%;
+  max-width: 507px;
+  background-size: contain;
+}
+/* line 109, ../../../app/models/sng_test_result/sng_test_result.scss */
+.sng_test_result-main .recommend {
+  margin-top: 40px;
+  width: 75%;
+  max-width: 527px;
+  background-size: contain;
+}
